@@ -1,0 +1,235 @@
+% ----------------------------------------------------------------------------------------%
+%   Created by Alessandro with TeXShop                      %
+%   ---->   May 27, 2009                                        %
+%   Compiled with XeLaTeX, on Mac OS X                      %
+%   Licensed under the Creative Commons Attribution 3.0 Unported    %
+%   Share, change, spread, and have fun!                        %
+%   http://creativecommons.org/licenses/by/3.0/                 %
+%   You can find more at http://aleplasmati.comuv.com               %
+% ----------------------------------------------------------------------------------------%
+
+\documentclass[a4paper, 10pt]{article}
+%!TEX encoding =  UTF-16
+% See geometry.pdf to learn the layout options. There are lots.
+%\usepackage[hmargin=2.54cm, vmargin=3.0cm]{geometry}               
+\usepackage[a4paper,margin=2cm]{geometry} 
+%symbols - the ones you see on the left of the email and of the phone
+%\usepackage{bbding}
+\usepackage{longtable}
+\usepackage{marvosym}
+\usepackage{amssymb}
+\usepackage{eurosym}
+%Colors/Graphics
+\usepackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pbsi}      % font style \bsifamily
+\usepackage{calligra}  % font style \calligra
+
+%Setup hyperref package, and colours for links, text and headings
+\usepackage{hyperref}
+%\definecolor{linkcolour}{HTML}{CC0080} %light purple link for the email
+\definecolor{linkcolour}{rgb}{0.13,0.54,0.13}
+%\definecolor{shade}{HTML}{F0F0FF}  %light blue shade
+\definecolor{shade}{rgb}{0.97,0.97,1}
+%\definecolor{text1}{HTML}{2b2b2b}      %text is almost black
+\definecolor{text1}{HTML}{000000}       %text is black 
+%\definecolor{headings}{HTML}{601112}   %dark red
+\definecolor{headings}{rgb}{0.43,0.54,0.24}
+\definecolor{subheadings}{HTML}{301112}     %darker red
+
+\hypersetup{colorlinks,breaklinks,
+    urlcolor=headings, 
+    linkcolor=linkcolour}
+
+\usepackage{fancyhdr}               %custom footer
+\pagestyle{fancy}
+\fancyhf{}
+%\rfoot{\color{black} {\sffamily Last update: \today}. }
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{titlesec}               %custom \section
+
+\titleformat{\section}
+    {\color{headings}
+        \scshape\Large\raggedright\bf\sc}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt}
+
+\titleformat{\subsection}
+{\color{subheadings}\large\bf\raggedright}{\phantom{AA}}{0em}{}[\color{black}]
+
+\begin{document}
+
+\color{text1} % set text color for the whole doc
+%<<<< TITLE >>>>
+%\vspace*{-12mm}
+\begin{minipage}{0.45\textwidth} %START of left-hand side minipage
+\par{\centering
+{\sffamily\huge Ydalia Delgado-Mercado}\\   
+{\color{black}  \em \rmfamily \Large Resume \\[25pt]\par}
+{\color{white} \hrule} %does this rule really change anything?
+}       
+\end{minipage}
+\begin{minipage}{0.55\textwidth} %START of right-hand side minipage 
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{8cm}}
+    & C. Las Pecanas 130,
+    La Molina, Lima,
+    Peru \\
+    \raisebox{-0pt}{\Telefon}   &+51-1436-2648\\
+    \raisebox{-0pt}{\Letter}
+    &\href{mailto:ydelgado83@gmail.com}
+        {ydelgado83@gmail.com} \\
+%   & Born in: Lima, Peru, February26$^\mathrm{th}$ 1983\\
+%   & Nationality: Peruvian\\
+\end{tabular}
+}
+}\\[12pt]
+%\vspace*{-5mm}\includegraphics[height=4.6cm,clip]{/Users/ydelgado/Desktop/me.jpg}
+\end{minipage}
+
+\vspace{0pt} %trick for alignment
+\section{Education}
+\vspace*{-3mm}
+\begin{longtable}{rl}
+    %EDUCATION -3-
+    \textsc{Apr} 2010 -- \textsc{Mar} 2013 & \textbf{Ph.D., Theoretical Physics} (graduated with honors)\\
+     & Karl-Franzens-Universit\"at (KFU), Graz, Austria\\
+     \vspace*{-3mm}
+     &\\
+    %EDUCATION -2-
+    2007 -- 2009 & \textbf{M.Sc., Theoretical Physics} (graduated with honors)\\
+     & Pontificia Universidad Cat\'olica del Per\'u (PUCP), Lima, Peru\\
+     & CERN, Geneva, Switzerland\\
+     \vspace*{-3mm}
+     &\\
+    %EDUCATION -1-
+    2000 -- 2006 & \textbf{B.Sc. Physics} (graduated with honors)\\
+    & (2000-2003) Electronics Engineering / (2003-2006) Physics\\
+    & Pontificia Universidad Cat\'olica del Per\'u (PUCP), Lima, Peru\\
+\end{longtable}
+
+
+\vspace*{2mm}
+\section{Experience}
+\vspace*{2mm}
+\noindent {\bf Back-end developer}\vspace*{-1mm}
+\begin{itemize}
+    \item[-] Intern as software engineer for 13 months at \href{http://www.weldai.com/}{Runway20 Inc.}, California, USA (remote position).\vspace*{-2mm}
+    \item[-] Building data pipelines.\vspace*{-2mm}
+    \item[-] Data analysis tools.\vspace*{-2mm}
+    \item[-] Shipping code into production.\vspace*{-2mm}
+\end{itemize}
+
+\vspace*{2mm}
+\noindent {\bf Data analysis:}\vspace*{-1mm}
+\begin{itemize}
+    \item[-] {\it Doctoral (2010-2013) and Postdoctoral (Apr 2013-Jul 2014) positions, KFU - Graz, Austria}
+              \\Monte Carlo algorithms, time-series analysis, correlations, and statiscis.\vspace*{-1mm}
+    \item[-] {\it Stay at the University of Wuppertal, Germany (Mar-Jul 2012)}
+              \\Optimization of gradient descent algorithms using CUDA.\vspace*{-1mm}
+    \item[-] {\it Member of the ALICE experiment's data analysis group,  PUCP (2006-2010)}
+              \\Statistics, simulation and optimization of the design of measurement instruments.
+    \item[-] {\it Stay at the University of Sao Paulo (USP), Brazil (Mar-Apr 2009)}
+              \\Model fitting, statistics\vspace*{-1mm}
+    \item[-] {\it Member of the ALICE experiment's \href{http://aliweb.cern.ch/Offline/}{data analysis group}, CERN - 
+              Geneva, Switzerland (2006-2009)}
+              \\Bayesian statistics, work in large collaborations.
+\end{itemize}
+
+
+\vspace*{2mm}
+\section{\textsc{Accomplishments}}
+\vspace*{1mm}
+\begin{itemize}
+    \item[-] Delivered code into production for Weld.
+    \item[-] Development of own web application from scratch (private project).  \href{https://github.com/ydelgadom/non_physics}{Code on Github}.\vspace{-1mm}
+    \item[-] Co-invented a more efficient \href{http://inspirehep.net/record/1202877}{Monte Carlo algorithm}.
+    \vspace{-1mm}
+    \item[-] Member of the \href{http://home.web.cern.ch/about/experiments/alice}{ALICE-LHC}/CERN
+    collaboration.  One of the largest experiments on particle physics, where 36 countries and 2000 researchers
+    are involved.
+    \vspace*{-1mm}
+    \item[-] Working independently on own projects (during my positions at the KFU).
+    \vspace*{-1mm}
+    \item[-] Flexibility to work on rather different topics.
+     \vspace*{-1mm}
+    \item[-] Transfer knowledge: 11 talks (2 as invited speaker) 
+    and 6 posters in international conferences.
+     \vspace*{-1mm}
+    \item[-] Publications in top international journals:
+    8 papers in theoretical physics, 8 conference proceedings (total of 120 citations) and 
+    12 papers in experimental physics (1500 citations).
+\end{itemize}
+
+
+\newpage
+\section{\textsc{Skills}}
+\vspace*{1mm}
+\hspace*{-0.7cm}\begin{tabular}{ll}
+{\bf Computer Skills:}
+      & Python, Django, Tornado\vspace*{1mm}\\ 
+      & SQL:  MySQL and Postgresql\vspace*{1mm}\\ 
+      & C/C++, Fortran, Cuda, \textsc{mpi}\vspace*{1mm}\\
+      & {\LaTeX}, HTML/CSS\vspace*{1mm}\\
+      & Linux, \textsc{bash}\\
+\end{tabular}\\[0.5pt]
+
+\vspace*{1mm}
+\hspace*{-0.7cm}\begin{tabular}{ll}
+{\bf Language Skills:} &
+      Spanish (native)\vspace*{1mm}\\
+    & English (advanced)\vspace*{1mm}\\
+    & German (intermediate)\\
+\end{tabular}
+
+
+\vspace*{4mm}
+\section{Awards and Grants}
+\vspace*{2mm}
+\begin{itemize}
+    \item[-] \href{http://www.physik.uni-regensburg.de/STRONGnet/index.php?pg=home}{Marie Curie}
+    \textbf{Grant} for PhD studies at KFU, Graz (2010, 3 Year)
+    \vspace*{-1mm}
+
+    \item[-] \href{http://www.roma1.infn.it/exp/helen/}{HELEN} 
+    \textbf{Grant} to work at: USP, Brazil (2009, 2 Month) and CERN (2006-2008, 10 Month)
+    \vspace*{-1mm}
+
+    \item[-] {\bf Awards} for Master Thesis: Galileo-PUCP (2009) and PAIP-PUCP (2008)
+    \vspace*{-1mm}
+ 
+    \item[-] \textbf{Scholarship} for the Master program at PUCP, Peru (2007, 2 Year)
+    \vspace*{-1mm}
+    
+    \item[-] PAIN-PUCP \textbf{award} for undergrad. students involved in a research project (2005)
+    \vspace*{-1mm}
+    
+    \item[-] ERA \textbf{Scholarship} for outstanding performance in undergrad. studies, PUCP (2002, 4 Year)
+\end{itemize}
+
+
+\vspace*{4mm}
+\section{Other Accomplishments}
+\vspace*{2mm}
+\noindent {\bf Teaching:}\vspace*{-1mm}
+\begin{itemize}
+    \item[-] Lecture course at  KFU, Austria (Postgraduate level - Summer 2014)\vspace*{-2mm}
+    \item[-] Teaching assistant at PUCP, Peru (2007-2009)
+\end{itemize}
+
+\vspace*{2mm}
+\noindent {\bf Volunteering:}\vspace*{-1mm}
+\begin{itemize}
+    \item[-] Work as a volunteer at the Elephant Nature Park 
+          \href{http://www.elephantnaturepark.org/}{EPN}, Thailand (2013)\vspace*{-2mm}
+    \item[-] Participation in social projects with poor families, Peru (2000-2009)
+\end{itemize}
+
+\vspace*{2mm}
+\noindent {\bf Organization:}\vspace*{-1mm}
+\begin{itemize}
+    \item[-] \href{http://143.50.247.55/STRONGnet2013/}{STRONGnet} 
+          conference organization in Graz (2013)
+\end{itemize}
+\end{document}  
